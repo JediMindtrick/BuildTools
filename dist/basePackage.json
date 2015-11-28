@@ -1,0 +1,10 @@
+{
+    "scripts":{
+        "resources": "node node_modules/build-tools/dist/cpr.js src dist '**/!(*.js)'",
+        "babel": "babel src --source-maps inline --out-dir dist",
+        "mc-dev": "nodemon --watch src -e html,js,css,json,md --exec 'npm run babel && npm run resources'"
+    },
+    "dependencies":{
+        "build-tools": "^1.0.0"
+    }
+}

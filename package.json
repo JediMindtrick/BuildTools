@@ -20,7 +20,9 @@
   "homepage": "https://github.com/JediMindtrick/BuildTools#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel src --source-maps inline --out-dir dist"
+    "resources": "node dist/cpr.js src dist '**/!(*.js)'",
+    "babel": "babel src --source-maps inline --out-dir dist",
+    "mc-dev": "nodemon --watch src -e html,js,css,json,md --exec 'npm run babel && npm run resources'"
   },
   "dependencies": {
     "chalk": "^1.1.1",
