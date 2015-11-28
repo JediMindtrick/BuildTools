@@ -4,10 +4,15 @@
     },
     "scripts":{
         "resources": "$npm_package_config_cpr src dist '**/!(*.js)'",
+        "lint": "node ./node_modules/eslint/bin/eslint.js src",
+        "format": "node ./node_modules/esformatter/bin/esformatter -c esformatter.json -i 'src/**/*.js'",
         "babel": "babel src --source-maps inline --out-dir dist",
         "mc-dev": "nodemon --watch src -e html,js,css,json,md --exec 'npm run babel && npm run resources'"
     },
     "dependencies":{
-        "build-tools": "^1.0.0"
+        "build-tools": "^1.0.0",
+        "eslint": "^1.7.3",
+        "esformatter": "^0.8.1",
+        "esformatter-semicolons": "^1.1.2"
     }
 }

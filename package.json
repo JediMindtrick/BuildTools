@@ -9,7 +9,7 @@
   },
   "keywords": [
     "build",
-    "chain",
+    "build chain",
     "devops"
   ],
   "author": "Brandon Wilhite",
@@ -20,12 +20,17 @@
   "homepage": "https://github.com/JediMindtrick/BuildTools#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "node ./node_modules/esformatter/bin/esformatter -c esformatter.json -i 'src/**/*.js'",
+    "lint": "node ./node_modules/eslint/bin/eslint.js src",
     "resources": "node dist/cpr.js src dist '**/!(*.js)'",
     "babel": "babel src --source-maps inline --out-dir dist",
-    "mc-dev": "nodemon --watch src -e html,js,css,json,md --exec 'npm run babel && npm run resources'"
+    "mc-dev": "nodemon --watch src -e html,js,css,json,md --exec 'npm run lint && npm run babel && npm run resources'"
   },
   "dependencies": {
     "chalk": "^1.1.1",
+    "esformatter": "^0.8.1",
+    "esformatter-semicolons": "^1.1.2",
+    "eslint": "^1.7.3",
     "fs-extra": "^0.26.2",
     "minimatch": "^3.0.0"
   }
