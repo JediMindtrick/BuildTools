@@ -1,0 +1,10 @@
+'use strict';
+
+var fs = require('fs-extra');
+
+var dir = '/src/lib';
+fs.ensureDir(dir, function (err) {
+  console.log(err); // => null
+  // dir has now been created, including the directory it is to be placed in
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9zY2FmZm9sZC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLElBQUksRUFBRSxHQUFHLE9BQU8sQ0FBQyxVQUFVLENBQUMsQ0FBQTs7QUFFNUIsSUFBSSxHQUFHLEdBQUcsVUFBVSxDQUFBO0FBQ3BCLEVBQUUsQ0FBQyxTQUFTLENBQUMsR0FBRyxFQUFFLFVBQVUsR0FBRyxFQUFFO0FBQy9CLFNBQU8sQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUE7O0NBRWpCLENBQUMsQ0FBQyIsImZpbGUiOiJzY2FmZm9sZC5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBmcyA9IHJlcXVpcmUoJ2ZzLWV4dHJhJylcblxudmFyIGRpciA9ICcvc3JjL2xpYidcbmZzLmVuc3VyZURpcihkaXIsIGZ1bmN0aW9uIChlcnIpIHtcbiAgY29uc29sZS5sb2coZXJyKSAvLyA9PiBudWxsXG4gIC8vIGRpciBoYXMgbm93IGJlZW4gY3JlYXRlZCwgaW5jbHVkaW5nIHRoZSBkaXJlY3RvcnkgaXQgaXMgdG8gYmUgcGxhY2VkIGluXG59KTtcbiJdfQ==
