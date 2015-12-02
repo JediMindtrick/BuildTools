@@ -7,3 +7,12 @@ You will need to install babel globally to use it (one time only).  The current 
 ```
 npm install -g babel@5.8.29
 ```
+
+Stuff We Need (cross-platform)
+------------------------------
+* Run a command in a new shell
+```
+start cmd /k "<command>"
+```
+* "If this line doesn't exist in this file, add it at line #"
+* Manipulate json from command-line
