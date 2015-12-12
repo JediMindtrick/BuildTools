@@ -16,3 +16,7 @@ start cmd /k "<command>"
 ```
 * "If this line doesn't exist in this file, add it at line #"
 * Manipulate json from command-line
+
+Helpful Links
+-------------
+[Clone git repo into non-empty directory](http://stackoverflow.com/questions/2411031/how-do-i-clone-into-a-non-empty-directory)
